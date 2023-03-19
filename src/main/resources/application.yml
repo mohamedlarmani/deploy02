@@ -1,0 +1,30 @@
+spring:
+  devtools:
+    add-properties: false
+server:
+  port: 5000
+
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+server:
+  port: 7070
+---
+spring:
+  config:
+    activate:
+      on-profile: qa
+server:
+  port: 5050
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+server:
+  port: 4000
+
+
+
